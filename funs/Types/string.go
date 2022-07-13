@@ -8,6 +8,7 @@ func main() {
 	fmt.Println(s[3:7])
 	fmt.Println(s[0:])
 	fmt.Println(s[:8])
+	fmt.Println(s)
 
 	/*The i-th byte of a string is not necessarily the i-th character of a string, because the UTF-8 encoding of a non-ASCII code point requires two or more bytes.*/
 	s2 := "ഇ" // "ഇ" is a malayalam character which requires 3 bytes
@@ -17,4 +18,7 @@ func main() {
 
 	// String concat
 	fmt.Println(s + s2)
+
+	x := s > s2 // why false??
+	fmt.Println(x)
 }
