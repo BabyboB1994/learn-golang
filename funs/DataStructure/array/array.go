@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
+	var emptArr = [...]int{}
+	fmt.Println(emptArr)
+	fmt.Println(cap(emptArr))
+	fmt.Println()
+
 	var intArr = [...]int{11, 12, 13}
 	fmt.Printf("%p\n", &intArr)
 	fmt.Printf("Elements in intArr: %v\n", intArr)
@@ -48,6 +53,9 @@ func checkPassingArrayAsValue(intgArr [3]int) {
 
 // sample output
 /*
+[]
+0
+
 0xc0000140c0
 Elements in intArr: [11 12 13]
 Type of intArr: [3]int
